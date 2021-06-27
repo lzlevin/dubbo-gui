@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UI">
+  <grid id="27dc6" binding="hello" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="c33b5" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d480f" class="javax.swing.JButton" binding="ok">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="确定"/>
+            </properties>
+          </component>
+          <component id="df1c1" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="主机"/>
+            </properties>
+          </component>
+          <component id="5bc23" class="javax.swing.JTextField" binding="host">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="127.0.0.1"/>
+              <toolTipText value="如127.0.0.1"/>
+            </properties>
+          </component>
+          <component id="c7ba" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="端口"/>
+            </properties>
+          </component>
+          <component id="70e65" class="javax.swing.JTextField" binding="port">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="20881"/>
+              <toolTipText value="如127.0.0.1"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="b2ddf" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="49483" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="方法全路径"/>
+            </properties>
+          </component>
+          <component id="1860c" class="javax.swing.JTextField" binding="clazz">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="com.vin.admin.service.UserService#getUser"/>
+              <toolTipText value="Idea可以右键方法选择Copy Refrence"/>
+            </properties>
+          </component>
+          <component id="be07c" class="javax.swing.JButton" binding="美化请求参数Button" default-binding="true">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="美化请求参数"/>
+            </properties>
+          </component>
+          <component id="c2b81" class="javax.swing.JButton" binding="chorme转JsonButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Chorme转Json"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="6dc8f">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d8b69" class="javax.swing.JTextArea" binding="response">
+            <constraints/>
+            <properties>
+              <toolTipText value="响应参数"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="70e1">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="34eda" class="javax.swing.JTextArea" binding="request">
+            <constraints/>
+            <properties>
+              <text value="请求参数支持普通类型，如123456，支持json类型的pojo，如{&quot;name&quot;:&quot;张三&quot;}，多参数请用,分割，如{&quot;name&quot;:&quot;张三&quot;},{&quot;name&quot;:&quot;&quot;里斯}"/>
+              <toolTipText value="请求参数支持普通类型，如123456，支持json类型的pojo，如{&quot;name&quot;:&quot;张三&quot;}，多参数请用,分割，如{&quot;name&quot;:&quot;张三&quot;},{&quot;name&quot;:&quot;&quot;里斯}"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
